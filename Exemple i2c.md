@@ -89,4 +89,4 @@ Il est important de noter que le protocole I2C nécessite l'ajout de **résistan
 
 En résumé, le protocole I2C permet de connecter facilement plusieurs capteurs à un seul Arduino avec seulement deux fils, tout en s'assurant que chaque périphérique a une adresse unique sur le bus. La bibliothèque `Wire` simplifie grandement l'implémentation et la gestion des communications avec ces périphériques.
 
-[Passons maintenant au TP d'application.](TP%ecran%LCD%calculatrice.md)
+[Passons maintenant au TP d'application.](./TP%20Ecran%20LCD%20calculatrice.md)
