@@ -74,4 +74,4 @@ Les valeurs courantes pour les résistances de pull-up sont de l'ordre de **4.7 
 
 En résumé, le protocole I2C est un outil puissant et flexible pour la communication entre circuits intégrés. Sa capacité à connecter plusieurs périphériques sur un seul bus avec seulement deux fils le rend particulièrement adapté aux systèmes embarqués complexes où l'espace et les broches de communication sont limités.
 
-[Dans la section de cours suivante, nous verrons un exemple d'utilisation du protocole I2C avec plusieurs capteurs.](Exemple%I2C.md)
+[Dans la section de cours suivante, nous verrons un exemple d'utilisation du protocole I2C avec plusieurs capteurs.](./Exemple%20i2c.md)
