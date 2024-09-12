@@ -41,9 +41,19 @@ Pour faciliter l'utilisation de l'écran LCD via I2C, nous allons utiliser la bi
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 ```
 
-Vérifiez bien l'adresse I2C de votre écran si vous avez des doutes.
+Vérifiez bien l'adresse I2C de votre écran et que le type soit paramétré sur PCF si vous avez des doutes.
 
-### 4. Développement de la calculatrice
+### 4. Initialisation de l'écran LCD
+
+Afin d'utiliser l'écran, il faut l'initialiser de la façon suivante :
+
+```cpp
+lcd.begin(16,2);
+lcd.init();
+lcd.backlight();
+```
+
+### 5. Développement de la calculatrice
 
 Votre calculatrice devra fonctionner selon les étapes suivantes :
 
