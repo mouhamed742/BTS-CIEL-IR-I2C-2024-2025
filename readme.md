@@ -15,6 +15,7 @@ L'usage des ces documents en dehors de la formation nommée ci-dessus est formel
 1. [Le protocole I2C](./Protocole%20i2c.md)
 2. [Exemple d'utilisation avec un arduino et plusieurs capteurs](./Exemple%20i2c.md)
 3. [TP Ecran LCD & calculatrice](./TP%20Ecran%20LCD%20calculatrice.md)
+4. [TP Station météo](./TP_station_meteo.md)
 
 ## Sources et liens utiles
 
