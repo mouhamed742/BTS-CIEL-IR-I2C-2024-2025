@@ -121,7 +121,7 @@ $lux = $_POST['lux'] ?? null;
 $heatIndex = $_POST['heatIndex'] ?? null;
 
 // Préparation et exécution de la requête SQL
-$sql = "INSERT INTO mesures (temperature, humidity, pressure, lux, heat_index) VALUES (?, ?, ?, ?, ?)";
+$sql = ""; // A completer avec la requete INSERT INTO coresspondant à votre base de données après la partie 4. Configuration de la base de données MySQL
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ddddd", $temperature, $humidity, $pressure, $lux, $heatIndex);
 
@@ -139,18 +139,10 @@ $conn->close();
 ### 4. Configuration de la base de données MySQL
 - Ouvrez phpMyAdmin depuis le menu WAMP (généralement accessible via http://localhost/phpmyadmin/)
 - Créez une nouvelle base de données nommée `station_meteo`
-- Dans cette base de données, créez une table nommée `mesures` avec la structure suivante :
+- Dans cette base de données, créez une table nommée `mesures` et choisissez quels doivent en être les champs. Ajoutez ci-dessous la requête permettant de créer la table `mesure`
 
 ```sql
-CREATE TABLE mesures (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    temperature FLOAT,
-    humidity FLOAT,
-    pressure FLOAT,
-    lux FLOAT,
-    heat_index FLOAT,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+MON CODE ICI
 ```
 
 - Assurez-vous que l'utilisateur 'root' a les permissions nécessaires pour accéder à cette base de données
