@@ -61,10 +61,6 @@ Convertissez le résultat de Fahrenheit en Celsius pour l'affichage final.
 
 Dans votre code Arduino, vous devrez implémenter ces formules en tenant compte des limites de précision des calculs en virgule flottante sur les microcontrôleurs.
 
-### 4. Analyse et rapport
-- Demandez aux étudiants d'analyser les interactions entre les différentes mesures (par exemple, comment la pression atmosphérique affecte la température)
-- Faites-leur rédiger un rapport expliquant le fonctionnement du système et leurs observations
-
 ## Partie 2 : Connexion WiFi et système de serveur
 
 ### Objectif
