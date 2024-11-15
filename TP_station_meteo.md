@@ -11,7 +11,7 @@ Vous emulerez sur votre machine en utilisant Visual Studio les éléments suivan
 - 1 écran LCD 16x2 avec module I2C
 
 ## Branchements
-- Connectez tous les dispositifs I2C (BME280, TSL2561, LCD) aux broches SDA et SCL de l'Arduino.
+- Connectez tous les dispositifs I2C aux broches SDA et SCL de l'Arduino.
 - Alimentez tous les composants en 5V et GND.
 
 ## Partie 1
