@@ -121,7 +121,7 @@ $lux = $_POST['lux'] ?? null;
 $heatIndex = $_POST['heatIndex'] ?? null;
 
 // Préparation et exécution de la requête SQL
-$sql = ""; // A completer avec la requete INSERT INTO coresspondant à votre base de données après la partie 4. Configuration de la base de données MySQL
+$sql = ""; // A completer avec la requete INSERT INTO correspondant à votre base de données après la partie 4. Configuration de la base de données MySQL
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ddddd", $temperature, $humidity, $pressure, $lux, $heatIndex);
 
