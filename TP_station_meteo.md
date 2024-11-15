@@ -5,9 +5,9 @@ Créer une station météo simple utilisant plusieurs capteurs I2C pour mesurer 
 
 ## Matériel nécessaire
 Vous emulerez sur votre machine en utilisant Visual Studio les éléments suivants :
-- 1 carte Arduino (Uno ou similaire)
-- 1 capteur BME280 (température, humidité, pression)
-- 1 capteur TSL2561 (luminosité)
+- 1 carte Arduino (Uno R3)
+- 1 capteur d'humidité Micro:bit
+- 1 capteur de température dans la cétagorie "Autres coposants"
 - 1 écran LCD 16x2 avec module I2C
 
 ## Branchements
