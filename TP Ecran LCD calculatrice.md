@@ -69,3 +69,9 @@ Le programme devra gérer les erreurs, comme la division par zéro, et afficher 
 
 * Améliorer l'affichage avec des messages plus détaillés ou des symboles.
 * Ajouter la possibilité de calculs en chaîne sans réinitialiser les valeurs.
+
+### Pull Request
+
+Votre pull request contiendra deux fichiers :
+- Un fichier .ino avec le code Arduino
+- Un fichier .brd avec votre montage
