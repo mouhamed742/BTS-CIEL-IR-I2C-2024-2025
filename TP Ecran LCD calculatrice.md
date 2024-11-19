@@ -29,7 +29,7 @@ Utilisez les broches **SDA** et **SCL** de l'Arduino pour connecter votre écran
 
 N'oubliez pas de connecter les broches d'alimentation (VCC et GND) et d'ajouter les résistances de pull-up sur les lignes SDA et SCL si nécessaire.
 
-![image](https://github.com/user-attachments/assets/b7e4709b-31e8-459b-a067-2d683267dc8d)
+![image](https://github.com/user-attachments/assets/85a83573-db7b-4f82-b9d3-eb25afb41467)
 
 ### 3. Initialisation de la bibliothèque I2C
 
