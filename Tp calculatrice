@@ -1,0 +1,91 @@
+// C++ code
+//
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x20, 16, 2);
+
+void setup()
+{
+  lcd.begin(16,2);
+  lcd.init();
+  lcd.backlight();
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+  float num1, num2, result; 
+  char operation;
+  
+  lcd.setCursor(0, 0);
+  lcd.print("1er nombre : ");
+  Serial.println("Entrez 1er nombre :");
+  while (serial.available() == 0);
+  num1 = Serial.parseFloat(); //lecture du 1er nombre
+  lcd.setCursor(0, 1);
+  lcd.print(num1);
+  Serial.println(num1);
+  delay(1000);
+  
+  lcd.clear();
+  
+  lcd.setCursor(0,0);
+  lcd.print("2eme nombre :");
+  Serial.println("Entrez 2eme nombre :");
+  while (Serial.available() == 0);
+  num2 = Serial.parseFloat(); //lecture du 2eme nombre
+  lcd.setCursor(0, 1);
+  lcd.print(num2);
+  Serial.println(num2);
+  delay(1000);
+ 
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Op: +,-,*,/");
+  Serial.println("Entrez une operation (+, -, *, /) :");
+  while (Serial.available() == 0);
+  operation = Serial.read(); //lecture de l'operation
+  Serial.println(operation);
+  delay(1000);
+  
+  lcd.clear();
+  
+    switch (operation) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+    result = num1 - num2;
+      break;
+    case '*':
+    result = num1 * num2;
+      break;
+    case '/':
+    if (num2 != 0) {
+      result = num1 / num2;
+    } else {
+      lcd.clear();
+      lcd.print("Erreur: Div 0");
+      Serial.println("Erreur: division par zéro");
+      delay(2000);
+      return; 
+    }
+      break;
+    default:
+      lcd.clear();
+      lcd.print("Erreur: Op no valid");
+      delay(2000);
+      return;
+  }
+  // Afficher le rsultat 
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Res:");
+  lcd.setCursor(5, 0);
+  Serial.print("Resultat :");
+  Serial.print(result);
+  
+  delay(10000); // 
+  
+}
